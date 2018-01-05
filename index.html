@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Trivia</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Lato" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="row text-center m-1">
+    <div class="col-md-12 centered">
+      <button id="start-btn" class="btn btn-success btn-lg pink">Start</button>
+      <div id="trivia-view" class="bg-white hidden">
+        <header>
+          <h1 class="p-3 pinkf">JavaScript Trivia!</h1>
+        </header>
+        <div id="time-remaining"></div>
+        <div id="trivia-body" class="trivia-format">
+          <div id="question"></div>
+          <div class="choices"></div>
+        </div>
+        <div id="trivia-result-wrong" class="hidden">
+          <div class="text-danger pinkf">Wrong!</div>
+          <div>The Correct Answer was : <span class="correct_answer font-weight-bold pinkf"></span></div>
+          <div class="img"></div>
+        </div>
+        <div id="trivia-result-correct" class="hidden">
+          <div class="text-success pinkf">Correct!</div>
+          <div class="img"></div>
+        </div>
+        <div id="trivia-summary" class="hidden">
+          <div><h4>Finished!</h4></div>
+          <div>Correct Answers: <span class="correct"></span></div>
+          <div>Wrong Answers: <span class="wrong"></span></div>
+          <div>Unanswered: <span class="timeout"></span></div>
+          <button id="restart-btn" class="btn btn-success btn-lg mt-5 pink">Start Over?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="assets/javascript/script.js">
+  </script>
+
+</body>
+
+</html>
